@@ -2,8 +2,8 @@
 
 import sys
 if len(sys.argv) != 4:
-    sys.exit('This script finds sequences for samples of interest, given the sample names and index sequence in a mapping_oligos file. It need the following inputs: input.fasta, mapping.oligos, input_I1.fastq\n'
-             'Usage: ./my_script.py <Input.file> <mapping.oligos> <input_I1.fastq>\n')
+    sys.exit('This script finds sequences for samples of interest, given the sample names and index sequence in a mapping_oligos file. It needs the following inputs: input.fasta, mapping.oligos, input_I1.fastq\n'
+             'Usage: ./my_script.py <Input.fasta> <mapping.oligos> <input_I1.fastq>\n')
 
 Script, InputFileName1, InputFileName2, InputFileName3 = sys.argv
 
