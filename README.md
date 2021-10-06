@@ -1,6 +1,6 @@
 # army_ant_myrmecophiles
 
-### This repository contains the complete pipelines for the analysis and visualization of 16S rRNA V4 region amplicon sequencing data for the publication by C. Valdivia *et al.* (in prep) with the working title *"Shared microbial symbionts among different cohabitant species"*.  
+#### This repository contains the complete pipelines for the analysis and visualization of 16S rRNA V4 amplicon sequencing data for the publication by C. Valdivia *et al.* (in prep) with the working title *"Shared microbial symbionts among different cohabitant species"*.  
   
 The starting data comprises amplicon datasets for XX army ants and XX myrmecophile beetles, plus negative controls. Libraries prepped in 2013-14 by Argonne National Laboratory, following Earth Microbiome Project protocols, were sequenced across five 2 x 150 bp Illumina MiSeq lanes, in multiplex with samples from other projects. From each lane, we obtained the following files:
 
