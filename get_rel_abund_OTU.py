@@ -1,6 +1,12 @@
 ###### Reading input count_table as a list of lists. Lists correspond to columns, and indexes to rows.
 ###### Row #0 - headings; Column #0 - Unique genotype names; Column #1 - Total counts for given genotype
+#! /usr/bin/env python3
 import sys
+if len(sys.argv) != 3:
+   sys.exit('This script calculates relative abundance for OTUs\n'
+             'Usage: ./get_rel_abund_OTU.py <Decontaminated_OTU_table.txt> <output_file.txt>\n')
+
+Script, Input_count_table, Output_rel_abund = sys.argv
 
 TABLE = open(Input_count_table, 'r')
 headings = TABLE.readline().strip('\t\n').split('\t')
