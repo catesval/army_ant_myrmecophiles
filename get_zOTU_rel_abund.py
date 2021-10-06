@@ -2,7 +2,7 @@
 
 import sys
 if len(sys.argv) != 3:
-    sys.exit('This script calculates relative abundance for zOTUs given a OTU list, and creates a new file with the OTU as file name containing all zOTUs for that OTU. It need the following inputs: otu_list.txt, Decontaminated_zOTU.table\n'
+   sys.exit('This script calculates relative abundance for zOTUs given an OTU list, and creates a new file with the OTU as file name containing all zOTUs for that OTU. It needs the following inputs: otu_list.txt, Decontaminated_zOTU.table\n'
              'Usage: ./get_zOTU_rel_abund.py <otu_list.txt> <Decontaminated_zOTU.table>\n')
 
 Script, InputFileName1, InputFileName2 = sys.argv
