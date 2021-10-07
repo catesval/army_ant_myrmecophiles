@@ -1,7 +1,18 @@
 # army_ant_myrmecophiles
-#Analysis pipeline used for the analysis of army ant and myrmecophile microbiomes.
 
-We started with samples scattered through five different files (five different sequencing runs). For each run we have the following files:
+#### This repository contains the complete pipelines for the analysis and visualization of 16S rRNA V4 amplicon sequencing data for the publication by C. Valdivia *et al.* (in prep) with the working title *"Shared microbial symbionts among different cohabitant species"*.  
+  
+The starting data comprises amplicon datasets for XX army ants and XX myrmecophile beetles, plus negative controls. Libraries prepped in 2013-14 by Argonne National Laboratory, following Earth Microbiome Project protocols, were sequenced across five 2 x 150 bp Illumina MiSeq lanes, in multiplex with samples from other projects.
+
+The workflow comprised X distinct steps. They are listed below, and either discussed in more details, or linked to further down.
+
+1. Extraction of project-specific libraries from multiplexed sequencing datasets obtained from Argonne Nat'l Laboratory
+2. Basic analysis of the amplicon data: filtering, denoising, OTU picking
+3. ....
+
+
+
+From each lane, we obtained the following files:
 
 Run_R1.fastq
 Run_R2.fastq
