@@ -121,6 +121,12 @@ For this step we need:
 **3.1. We run the QUACK script to remove contaminants.**
 This script can also use spike-in information to obtain absolut abundance of reads, but we don't have them in our analysis, so our only input is a file containing the names of the blank libraries. 
 
+First, the script compares the maximum relative abundance of unique genotypes in libraries representing insect samples against the maximum relative abundance of these same genotypes in blank libraries. If the ratio of these values was below the specified threshold (here, set to 10), then the genotype was classified as a contaminant and removed. 
+
+Second, the script classifies any genotype that reaches a relative abundance threshold (here: 0.001) as “symbiont”; we conclude that the remaining microbial signal, likely a combination of rare symbiotic microbes, uncommon contaminants, and sequencing artifacts, cannot be classified reliably, but include them as “others” in relative abundance and other comparisons. 
+
+Finally, the script classifies libraries as “heavily contaminated” and removes them from the list if the proportion of reads classified as contaminants exceedes a third threshold (here: 0.8).
+
 >Usage: QUACK.py <count_table> <list_of_blanks> <list_of_spikeins> <otus.tax> <ThresholdA; recommended value 10> <ThresholdB; recommended value 0.001> <ThresholdC; recommended value 80>
 
 ```
