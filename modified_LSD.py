@@ -316,7 +316,7 @@ for row_no in range(0, len(OTU_TAX)):
 
 TAX.close()
                 
-###We are adding 1 to the end of our dictionary to 
+###We are adding 1 to the end of our dictionary to reassign OTU numbers.
 for row_no in range(0, len(OTU_TABLE)):
     if otu_dict[OTU_TABLE[row_no][1]][-1] != 1 and OTU_TABLE[row_no][1] in otu_dict.keys():
         otu_dict[OTU_TABLE[row_no][1]].append(OTU_TABLE[row_no][3])
