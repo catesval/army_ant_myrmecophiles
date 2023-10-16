@@ -96,6 +96,10 @@ We navigate to the ./study_samples folder that we created previously. All the fa
 The script only needs the path to the folder containing the fasta files as input. 
 It returns OTU and zOTU tables. Original LSD pipeline and "add_seq_to_zotu.py", necessary for both the original and modified version, can be found [here](https://github.com/symPiotr/LSD)
 
+We have used the minsize value of 1 when denoising for two primary reasons:
+1. To retain information within negative control samples, needed for the contamination filtering step, but which tended to have a low total number of reads.
+2. To avoid “homogenizing” potential within-sample variation that could have been due to biology.
+
 ```
 ./modified_LSD.py /home/cata.valdivia/army_ants_fastq_files/study_samples/
 ```
