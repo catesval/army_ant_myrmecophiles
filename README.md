@@ -166,7 +166,7 @@ We give the script the name of our OTU table without taxonomic annotation and an
 
 This was done filtering by the following criteria, and selecting the OTUs that fulfilled at least two of them:
 
-1. It is present with a relative abundance higher than 0.001 in at least 20 samples.
+1. It is present with a relative abundance higher than 0.0001 in at least 20 samples.
 2. It is present with a relative abundance higher than 0.05 in at least one sample. 
 3. The average abundance of the OTU is at least 0.01.
 
